@@ -442,4 +442,57 @@ Inspired by: Warren Buffett (value investing, compounding) and Jim Simons (quant
 """)
 
 st.markdown("---")
-st.caption("Disclaimer: Investment in the stock market involves risks, and past performance is not indicative of future results. This program provides general information and should not be considered financial advice.")
+
+# --- Advanced Strategy & Research Insights (Conceptual) ---
+st.header("🔬 Advanced Strategy & Research Insights (Conceptual)")
+st.info("This section outlines advanced concepts used by professional investors. Implementing these fully requires integrating real-time data, complex models, and significant expertise. It serves as a guide for deeper exploration.")
+
+with st.expander("Quantitative Signals (Requires Real Data)"):
+    st.markdown("""
+    Quantitative strategies rely on mathematical and statistical models to identify trading opportunities.
+    These typically require vast amounts of historical data (price, volume, fundamental, alternative data).
+
+    **Common Indicators (Conceptual - not calculated here):**
+    * **Relative Strength Index (RSI):** Measures the speed and change of price movements to identify overbought or oversold conditions.
+    * **Moving Average Convergence Divergence (MACD):** Reveals changes in the strength, direction, momentum, and duration of a trend.
+    * **Bollinger Bands:** Measures market volatility and identify overbought or oversold levels.
+    * **Volume Analysis:** Identifying patterns in trading volume that correlate with price movements.
+    * **Factor Investing:** Screening stocks based on factors like Value (low P/E), Growth (high earnings growth), Quality (high ROE), Momentum (recent price trends), and Low Volatility.
+    * **Machine Learning Models:** Predicting future price movements, volatility, or sentiment using supervised or unsupervised learning.
+    """)
+    st.warning("To implement these, you would need to: 1) Fetch full historical daily data for each stock, 2) Calculate these indicators using libraries like `TA-Lib` or `pandas-ta`, and 3) Develop a backtesting framework.")
+
+with st.expander("Fundamental Analysis Factors"):
+    st.markdown("""
+    Fundamental analysis involves evaluating a company's financial health and intrinsic value.
+
+    **Key Metrics to Monitor:**
+    * **P/E Ratio (Price-to-Earnings):** Valuation metric comparing current share price to per-share earnings.
+    * **PEG Ratio (Price/Earnings to Growth):** Relates P/E to expected earnings growth.
+    * **ROE (Return on Equity):** Measures profitability in relation to shareholder equity.
+    * **Debt-to-Equity Ratio:** Indicates a company's leverage.
+    * **Revenue and Earnings Growth:** Tracking the rate at which a company's sales and profits are increasing.
+    * **Free Cash Flow:** Cash generated after accounting for capital expenditures.
+    * **Competitive Moat:** Sustainable competitive advantages (e.g., brand, patents, network effects).
+    * **Management Quality:** Experience, track record, and alignment with shareholder interests.
+    """)
+    st.warning("Integrating these metrics requires financial statement data from APIs (e.g., Yahoo Finance's detailed financials, Alpha Vantage, Finnhub's fundamental data endpoints).")
+
+with st.expander("Sentiment Analysis (Conceptual)"):
+    st.markdown("""
+    Sentiment analysis attempts to gauge the market's or public's emotional tone towards a stock or sector.
+
+    **Sources of Sentiment Data:**
+    * **News Headlines & Articles:** Analyzing financial news for positive, negative, or neutral sentiment.
+    * **Social Media (e.g., X/Twitter, Reddit):** Monitoring discussions for mentions and sentiment trends.
+    * **Analyst Ratings:** Aggregating buy/sell/hold recommendations from financial analysts.
+    * **Earnings Call Transcripts:** Analyzing language for management's tone and forward-looking statements.
+    """)
+    st.warning("Implementing sentiment analysis requires access to text-based data feeds and natural language processing (NLP) capabilities.")
+
+with st.expander("Global Macro & Event-Driven Analysis"):
+    st.markdown("""
+    * **Global Macro:** Investing based on broad economic trends, interest rate changes, currency movements, and geopolitical events.
+    * **Event-Driven:** Exploiting opportunities arising from specific corporate events like mergers, acquisitions, bankruptcies, or spin-offs.
+    """)
+    st.warning("These strategies require deep understanding of economics, geopolitics, and corporate finance, often relying on expert analysis rather than purely automated signals.")
