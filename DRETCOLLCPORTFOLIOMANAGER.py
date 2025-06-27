@@ -11,7 +11,7 @@ portfolio = [
     {"symbol": "ABNB", "stock": "AIRBNB", "current_price": 133.97},
     {"symbol": "BABA", "stock": "ALIBABA GROUP", "current_price": 114.05},
     {"symbol": "FOUR", "stock": "SHIFT4 PAYMENTS", "current_price": 98.73},
-    {"symbol": "CTXR", "stock": "CITIUS PHARMACEUTICALS INC.", "current_price": 1.67},
+    {"symbol": "CTXR", "stock": "CITIUS PHARMACEUTICALS INC.,", "current_price": 1.67},
     {"symbol": "BIDU", "stock": "BAIDU INC.", "current_price": 85.73},
     {"symbol": "LGO", "stock": "LARGO RESOURCS LTD.", "current_price": 1.22},
     {"symbol": "EEMA", "stock": "MSCI EMERGING MARKETS ASIA ISHARES", "current_price": 82.74},
@@ -248,6 +248,67 @@ if final_portfolio_performance:
             st.error("- Cannot provide a specific overall recommendation due to data issues.")
     else:
         st.warning("- Not enough valid data to provide a comprehensive overall portfolio recommendation.")
+
+st.markdown("---")
+
+# --- 🧠 30-Year Portfolio Strategy Guide ---
+st.header("🧠 30-Year Portfolio Strategy Guide")
+st.markdown("""
+Inspired by: Warren Buffett (value investing, compounding) and Jim Simons (quantitative, data-driven rebalancing)
+
+### 🔍 1. Core Strategic Foundations
+
+| Principle       | Warren Buffett                          | Jim Simons                                    |
+| :-------------- | :-------------------------------------- | :-------------------------------------------- |
+| **Investment Philosophy** | Buy wonderful companies at fair prices  | Exploit short-term inefficiencies via data    |
+| **Holding Period** | Decades (compound over time)            | Often short-term, but repeatable patterns     |
+| **Focus** | Value, fundamentals, moat               | Math, signals, quantitative models            |
+
+### 🏗️ 2. Recommended Structure for a Long-Term Portfolio
+
+| Component             | Suggested Allocation | Strategy                                             |
+| :-------------------- | :------------------- | :--------------------------------------------------- |
+| **U.S. Blue-Chip Stocks** | 30–40%               | Long-term compounding (NVDA, AMD, MOH, QCOM)         |
+| **Dividend-Paying Stocks**| 10–15%               | Steady income (PFFA, PLD, RTX)                       |
+| **ETFs (U.S. + Emerging)** | 20–25%               | Broad diversification (EEMA, SPY, QQQ)               |
+| **Global Growth Stocks** | 10–15%               | Alibaba, JD for exposure to Asia’s growth            |
+| **Speculative or Small Caps** | 5–10%                | CTXR, CLOV, LGO—high-risk, monitor closely           |
+| **Kenyan Stocks** | <5% (or watchlist)   | Opportunistic; small allocation unless FX risk managed |
+
+### 📈 3. Return Optimization Tactics
+
+* Rebalance annually to maintain target weights
+* Add capital during dips in high-quality names (NVDA, ABNB, MOH)
+* Avoid overtrading: Let winners run unless fundamentals deteriorate
+* Monitor key metrics: PE ratios, ROE, earnings trends
+* Use rolling 5-year performance metrics to evaluate ETF or sector shifts
+
+### ⚠️ 4. Risk Management
+
+* Limit exposure to low-liquidity stocks (e.g. Kenyan microcaps)
+* Cap speculative holdings to <10% of total portfolio
+* Keep at least 20–25% in ETFs or blue-chips for downside protection
+* Consider FX exposure if investing in emerging markets directly
+
+### 🧭 5. Signals to Buy/Sell Based on Simons/Buffett Ideas
+
+**BUY when:**
+* Price dips >20% in high-quality stock (and fundamentals are intact)
+* Strong earnings revisions or momentum (Simons-style signal)
+* Long-term competitive moat remains intact (Buffett-style)
+
+**SELL/REDUCE when:**
+* Momentum breaks down + deteriorating earnings (Simons)
+* PE ratios extremely overextended vs. sector
+* Company loses moat or faces structural disruption (Buffett-style)
+
+### 📅 6. 30-Year Mindset
+
+* Think in 10-year blocks, not quarters
+* Focus on compound annual growth rate (CAGR), not absolute returns
+* Assume cyclical downturns every 7–10 years; position accordingly
+* Build core around high-quality, repeatable business models
+""")
 
 st.markdown("---")
 st.caption("Disclaimer: Investment in the stock market involves risks, and past performance is not indicative of future results. This program provides general information and should not be considered financial advice.")
